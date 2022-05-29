@@ -1,4 +1,4 @@
-# Three.js Basic Scene
+# Three.js basic scene 'Somwhere in the desert'
 
 ```bash
 # Install dependencies (only the first time)
