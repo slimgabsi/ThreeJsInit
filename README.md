@@ -13,5 +13,5 @@ npm run build
 
 
 ## Preview
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/40427573/170894831-df161296-7cfa-49ff-9fe6-af13c4aafa08.png)
 
