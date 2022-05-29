@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
+import Stats from 'three/examples/jsm/libs/stats.module';
 import * as dat from 'dat.gui';
 
 const parametres = {
@@ -172,6 +173,9 @@ const LightsFolder = gui.addFolder('Lights');
 LightsFolder.add(dirLight, 'visible').name('Directional light');
 LightsFolder.add(hemiLight, 'visible').name('Hemisphere light');
 
+const stats = Stats();
+document.body.appendChild(stats.dom);
+
 /**
  * Animate
  */
@@ -193,6 +197,8 @@ const animate = () => {
 
 	// Update fbx model animation
 	if (mixer) mixer.update(deltaTime);
+	// Update Stats
+	stats.update();
 
 	// Render
 	renderer.render(scene, camera);

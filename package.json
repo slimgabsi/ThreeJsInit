@@ -4,7 +4,8 @@
   "author": "Slim G",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js"
+    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "deploy": "gh-pages -d ./dist/client"
   },
   "dependencies": {
     "@babel/core": "^7.13.1",
@@ -26,5 +27,8 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
