@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100vh;
+	font-family: 'Courier New', monospace;
+	background-color: #efd1b5;
+	color: #61443e;
+}
+header {
+	padding: 24px;
+	text-align: center;
+}
+
+.webgl {
+	position: fixed;
+	top: -24;
+	left: 0;
+	outline: none;
+}
